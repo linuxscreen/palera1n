@@ -134,8 +134,8 @@ int palera1n(int argc, char *argv[], char *envp[]) {
 	if (!(palerain_flags & palerain_option_device_info))
 		LOG(LOG_INFO, "Waiting for devices");
 
-	if (getenv("USBMUXD_SOCKET_ADDRESS") == NULL && access("/var/run/usbmuxd", F_OK) != 0) 
-		LOG(LOG_WARNING, "/var/run/usbmuxd not found, normal mode device detection will not work.");
+	if (getenv("USBMUXD_SOCKET_ADDRESS") == NULL && access("/data/usbmuxd", F_OK) != 0) 
+		LOG(LOG_WARNING, "/data/usbmuxd not found, normal mode device detection will not work.");
 	
 	pthread_create(&pongo_thread, NULL, pongo_helper, NULL);
 	pthread_create(&dfuhelper_thread, NULL, dfuhelper, NULL);
