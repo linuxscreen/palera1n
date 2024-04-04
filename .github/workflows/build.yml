@@ -115,7 +115,7 @@ jobs:
           git clone --depth=1 https://github.com/libimobiledevice/libplist
           git clone --depth=1 https://github.com/libimobiledevice/libimobiledevice-glue
           git clone --depth=1 https://github.com/libimobiledevice/libirecovery
-          git clone --depth=1 https://github.com/libimobiledevice/libusbmuxd
+          git clone --depth=1 https://github.com/linuxscreen/libusbmuxd
           git clone --depth=1 https://github.com/libimobiledevice/libimobiledevice
 
       - name: Select correct Xcode
@@ -624,9 +624,9 @@ jobs:
           git clone --depth=1 https://github.com/libimobiledevice/libplist
           git clone --depth=1 https://github.com/libimobiledevice/libimobiledevice-glue
           git clone --depth=1 https://github.com/libimobiledevice/libirecovery
-          git clone --depth=1 https://github.com/libimobiledevice/libusbmuxd
+          git clone --depth=1 https://github.com/linuxscreen/libusbmuxd
           git clone --depth=1 https://github.com/libimobiledevice/libimobiledevice
-          git clone --depth=1 https://github.com/libimobiledevice/usbmuxd
+          git clone --depth=1 https://github.com/linuxscreen/usbmuxd
 
       - name: Build Mbed TLS
         run: |
